@@ -22,8 +22,8 @@ def goes_after(word: str, first: str, second: str) -> bool:
         return False
 
 
-# print("Example:")
-# print(goes_after("world", "w", "o"))
+print("Example:")
+print(goes_after("world", "w", "o"))
 
 assert goes_after("world", "w", "o") == True
 assert goes_after("world", "w", "r") == False
@@ -34,24 +34,3 @@ assert goes_after("", "l", "o") == False
 assert goes_after("list", "l", "l") == False
 assert goes_after("world", "d", "w") == False
 assert goes_after('almaz', 'm', 'a') == False
-
-# a = 'transport'
-# b = 'r'
-# c = 't'
-# d = b+c
-# if a.count(b) == 1 and a.count(c) == 1:
-#     if d in a:
-#         print('yes')
-# else:
-#     first = a.index(b)
-#     second = a.index(c)
-#     if first > second:
-#         string = a[:first+3]
-#         if d in string:
-#             print('yes')
-#     else:
-#         string = a[:second+3]
-#         if d in string:
-#             print('yes')
-#     print('No')
-

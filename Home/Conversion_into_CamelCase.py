@@ -10,12 +10,3 @@ print(to_camel_case("my_function_name"))
 
 assert to_camel_case("my_function_name") == "MyFunctionName"
 assert to_camel_case("i_phone") == "IPhone"
-
-# a = "my_function_name"
-# print(a.split('_'))
-# dump = ''
-# for i in a.split('_'):
-#     dump += i.capitalize()
-# print(dump)
-
-

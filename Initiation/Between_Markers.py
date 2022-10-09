@@ -14,7 +14,6 @@ if __name__ == '__main__':
     print('Example:')
     print(between_markers('What is >apple<', '>', '<'))
 
-    # These "asserts" are used for self-checking and not for testing
     assert between_markers('What is >apple<', '>', '<') == 'apple'
     assert between_markers('What is [apple]', '[', ']') == 'apple'
     assert between_markers('What is ><', '>', '<') == ''
@@ -27,5 +26,3 @@ if __name__ == '__main__':
     assert between_markers('No hi', '[b]', '[/b]') == 'No hi', 'No markers at all'
     assert between_markers('No <hi>', '>', '<') == '', 'Wrong direction'
     print('Wow, you are doing pretty good. Time to check it!')
-
-

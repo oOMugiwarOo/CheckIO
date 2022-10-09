@@ -18,16 +18,3 @@ assert list(sum_by_types(["1", 2, 3])) == ["1", 5]
 assert list(sum_by_types(["1", "2", 3])) == ["12", 3]
 assert list(sum_by_types(["1", "2", "3"])) == ["123", 0]
 assert list(sum_by_types(["size", 12, "in", 45, 0])) == ["sizein", 57]
-
-
-# a = 0
-# c = ''
-# b = ["1", "2", 3]
-# # print(type(b[0]))
-#
-# for i in range(len(b)):
-#     if type(b[i]) == str:
-#         c += b[i]
-#     elif type(b[i]) == int:
-#         a += b[i]
-# print([c,a])

@@ -64,24 +64,3 @@ assert (
     morse_decoder("..   .-- .- ...   -... --- .-. -.   .. -.   .---- ----. ----. -----")
     == "I was born in 1990"
 )
-
-# a = '..   .-- .- ...   -... --- .-. -.   .. -.   .---- ----. ----. -----'
-# b = ''
-# c = ''
-# for i in a.split(' '):
-#     if i != '':
-#         b += MORSE[i]
-#     elif i == '':
-#         b += ' '
-# print(b)
-# for i in b.split(' '):
-#     if i == '':
-#         c += ' '
-#     else:
-#         c += i
-# print(c.capitalize())
-
-
-# print(MORSE.values())
-# print(MORSE.keys())
-# print(MORSE['...'])

@@ -24,10 +24,3 @@ assert cut_sentence("Hi my name is Alex", 10) == "Hi my name..."
 assert cut_sentence("Hi my name is Alex", 4) == "Hi..."
 assert cut_sentence("Hi my name is Alex", 20) == "Hi my name is Alex"
 assert cut_sentence("Hi my name is Alex", 18) == "Hi my name is Alex"
-
-
-
-
-
-
-

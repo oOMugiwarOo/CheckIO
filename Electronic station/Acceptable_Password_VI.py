@@ -12,7 +12,8 @@ def check_len_of_str(password: str):
 def is_acceptable_password(password: str) -> bool:
     if len(password) > 9 and 'password' not in password and 'PASSWORD' not in password and check_len_of_str(password):
         return True
-    if len(password) > 6 and any(map(str.isdigit, password)) and any(map(str.isalpha, password)) and 'password' not in password and 'PASSWORD' not in password and check_len_of_str(password):
+    if len(password) > 6 and any(map(str.isdigit, password)) and any(map(str.isalpha, password)) \
+            and 'password' not in password and 'PASSWORD' not in password and check_len_of_str(password):
         return True
     else:
         return False
@@ -35,11 +36,3 @@ assert is_acceptable_password("aaaaaabb1") == True
 assert is_acceptable_password("abc1") == False
 assert is_acceptable_password("abbcc12") == True
 assert is_acceptable_password("aaaaaaabbaaaaaaaab") == False
-
-# a = 'aaaaaaabbaaaaaaaab'
-# dump = ''
-# for i in a:
-#     if i not in dump:
-#         dump += i
-# print(dump)
-# print(check_len_of_str(a))

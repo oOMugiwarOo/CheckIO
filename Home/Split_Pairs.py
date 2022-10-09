@@ -19,12 +19,3 @@ assert list(split_pairs("abc")) == ["ab", "c_"]
 assert list(split_pairs("abcdf")) == ["ab", "cd", "f_"]
 assert list(split_pairs("a")) == ["a_"]
 assert list(split_pairs("")) == []
-
-# a = "abcdf"
-#
-# result = re.findall(r'\w\w', a)
-# if len(a) % 2 == 0:
-#     print(result)
-# else:
-#     result.append(a[-1]+'_')
-#     print(result)

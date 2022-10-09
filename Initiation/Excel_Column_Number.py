@@ -27,9 +27,9 @@ ALPHABET = {
     'Z': 26
 }
 
+
 def column_number(name: str) -> int:
     list_of_letter = []
-    result = 0
     if len(name) > 1:
         for i in name:
             list_of_letter.append(i)
@@ -41,7 +41,6 @@ def column_number(name: str) -> int:
         return ALPHABET[name]
 
 
-
 print("Example:")
 print(column_number("AA"))
 
@@ -50,26 +49,3 @@ assert column_number("Z") == 26
 assert column_number("AB") == 28
 assert column_number("ZY") == 701
 assert column_number('FXSHRXW') == 2147483647
-
-# name = 'FXSHRXW'
-# list_of_letter = []
-# result = 0
-# if len(name) > 1:
-#     for i in name:
-#         list_of_letter.append(i)
-#     print(list_of_letter)
-#     print(ALPHABET[list_of_letter[0]])
-#     print(ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]])
-#     print((ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]]) * 26 +ALPHABET[list_of_letter[2]])
-#     print(((ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]]) * 26 +ALPHABET[list_of_letter[2]]) * 26 +ALPHABET[list_of_letter[3]])
-#     print((((ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]]) * 26 +ALPHABET[list_of_letter[2]]) * 26 +ALPHABET[list_of_letter[3]]) * 26 +ALPHABET[list_of_letter[4]])
-#     print(((((ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]]) * 26 +ALPHABET[list_of_letter[2]]) * 26 +ALPHABET[list_of_letter[3]]) * 26 +ALPHABET[list_of_letter[4]]) * 26 +ALPHABET[list_of_letter[5]])
-#     print((((((ALPHABET[list_of_letter[0]] * 26 + ALPHABET[list_of_letter[1]]) * 26 +ALPHABET[list_of_letter[2]]) * 26 +ALPHABET[list_of_letter[3]]) * 26 +ALPHABET[list_of_letter[4]]) * 26 +ALPHABET[list_of_letter[5]]) * 26 +ALPHABET[list_of_letter[6]])
-#     result = ALPHABET[list_of_letter[0]]
-#     for i in list_of_letter[1:]:
-#         result *= 26
-#         result += ALPHABET[i]
-#         print(result)
-# else:
-#     print(ALPHABET[name])
-

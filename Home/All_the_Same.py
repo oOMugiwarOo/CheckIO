@@ -22,14 +22,3 @@ assert all_the_same([1, 1, 1, 2]) == False
 assert all_the_same([2, 1, 1, 1]) == False
 assert all_the_same([]) == True
 assert all_the_same([1]) == True
-
-# a = []
-#
-# if len(a) == 0:
-#     print(2)
-#
-# elif a.count(a[0]) == len(a):
-#     print(1)
-#
-# else:
-#     print(3)

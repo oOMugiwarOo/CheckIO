@@ -56,19 +56,3 @@ assert (
     morse_encoder("I was born in 1990")
     == "..   .-- .- ...   -... --- .-. -.   .. -.   .---- ----. ----. -----"
 )
-
-# a = 'some text'
-# b = ''
-# c = ''
-# for i in a:
-#     if i != ' ':
-#         b += MORSE[i] + ' '
-#     elif i == ' ':
-#         b += ' '
-# print(b)
-# for i in b.split(' '):
-#     if i == '':
-#         c += ' '
-#     else:
-#         c += i
-# print(c.capitalize())

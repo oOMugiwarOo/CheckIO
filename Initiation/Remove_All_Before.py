@@ -8,7 +8,6 @@ def remove_all_before(items: list, border: int) -> Iterable:
         return items
 
 
-
 print('Example:')
 print(remove_all_before([1, 2, 3, 4, 5], 3))
 
@@ -18,10 +17,3 @@ assert remove_all_before([1, 1, 2, 4, 2, 3, 4], 2) == [2, 4, 2, 3, 4]
 assert remove_all_before([1, 1, 5, 6, 7], 2) == [1, 1, 5, 6, 7]
 assert remove_all_before([], 0) == []
 assert remove_all_before([7, 7, 7, 7, 7, 7, 7, 7, 7], 7) == [7, 7, 7, 7, 7, 7, 7, 7, 7]
-
-
-# items = [1, 1, 2, 2, 3, 3]
-#
-# print(items.index(2))
-# print(items[items.index(2):])
-# print(items[items.index(2):])

@@ -10,7 +10,3 @@ assert correct_sentence("Greetings, friends") == "Greetings, friends."
 assert correct_sentence("Greetings, friends.") == "Greetings, friends."
 assert correct_sentence("greetings, friends.") == "Greetings, friends."
 assert correct_sentence("greetings, Friends.") == "Greetings, Friends."
-
-
-# s = "greetings, friends"
-# print(s[1:] + '.')

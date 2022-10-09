@@ -22,15 +22,5 @@ assert (
     == 3
 )
 
-a = '\nLorem ipsum dolor sit amet,\n\nconsectetur adipiscing elit\nNam odio nisi, aliquam\nNullam ante ligula,\n \n fermentum a porta\n '
-counter = 0
-print(a.split('\n'))
-for i in a.split('\n'):
-    if i == '':
-        pass
-    elif i[0].isalpha() or i[-1].isalpha():
-        counter += 1
-print(counter)
-
-# a = 'fsdfsd fsdf fsdfs'
-# print(a[0].isalpha())
+a = '\nLorem ipsum dolor sit amet,\n\nconsectetur adipiscing elit\nNam odio nisi, aliquam\nNullam ante ligula,\n' \
+    ' \n fermentum a porta\n '

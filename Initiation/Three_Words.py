@@ -19,16 +19,3 @@ assert checkio("He is 123 man") == False
 assert checkio("1 2 3 4") == False
 assert checkio("bla bla bla bla") == True
 assert checkio("Hi") == False
-
-# any(map(str.isdigit, a.split()))
-# a = 'He is 123 man'
-# counter = 0
-# for i in a.split():
-#     print(i.isalpha())
-#     if i.isalpha():
-#         counter += 1
-#         if counter == 3:
-#             print('Yes')
-#             break
-#     else:
-#         counter = 0

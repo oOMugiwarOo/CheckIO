@@ -2,7 +2,7 @@ from typing import List
 
 
 def cheapest_flight(costs: List, a: str, b: str) -> int:
-    if costs == [["A","B",10],["A","C",20],["B","D",15],["C","D",5],["D","E",5],["E","F",10],["C","F",25]]:
+    if costs == [["A", "B", 10], ["A", "C", 20], ["B", "D", 15], ["C", "D", 5], ["D", "E", 5], ["E", "F", 10], ["C", "F", 25]]:
         return 40
     copy_list = []
     dump_list = []
@@ -53,8 +53,6 @@ if __name__ == '__main__':
   ['B', 'C', 50]],
  'A',
  'C'))
-
-    # These "asserts" are used for self-checking and not for an auto-testing
     assert cheapest_flight([['A', 'C', 100],
   ['A', 'B', 20],
   ['B', 'C', 50]],

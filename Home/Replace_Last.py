@@ -17,11 +17,3 @@ assert list(replace_last([2, 3, 4, 1])) == [1, 2, 3, 4]
 assert list(replace_last([1, 2, 3, 4])) == [4, 1, 2, 3]
 assert list(replace_last([1])) == [1]
 assert list(replace_last([])) == []
-
-# a = [2, 3, 4, 1]
-# print(a[:-1])
-# b = a[:-1]
-# b.insert(0, a[-1])
-# print(b)
-#
-# print(a[-1])

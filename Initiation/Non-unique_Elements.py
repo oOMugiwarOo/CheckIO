@@ -8,6 +8,7 @@ def checkio(data: list) -> list:
         data.remove(data[data.index(j)])
     return data
 
+
 print('Example:')
 print(checkio([1, 2, 3, 1, 3]))
 
@@ -22,15 +23,3 @@ assert checkio([0, 1, 2, 3, 4, 0, 1, 2, 4]) == [0, 1, 2, 4, 0, 1, 2, 4]
 assert checkio([99, 98, 99]) == [99, 99]
 assert checkio([0, 0, 0, 1, 1, 100]) == [0, 0, 0, 1, 1]
 assert checkio([0, 0, 0, -1, -1, 100]) == [0, 0, 0, -1, -1]
-
-# a = [10, 9, 10, 10, 9, 8]
-# b = set(a)
-# print(b)
-# c = []
-# for i in b:
-#     if a.count(i) == 1:
-#         c.append(i)
-# print(c)
-# for j in c:
-#     a.remove(a[a.index(j)])
-# print(a)
